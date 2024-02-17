@@ -44,7 +44,7 @@ app:
 
 server:
   port: 8072
-
-logging:
-  config: classpath:logback-delayed.xml
+#
+#logging:
+#  config: classpath:logback-delayed.xml
 
