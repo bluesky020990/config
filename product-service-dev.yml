@@ -8,4 +8,4 @@ spring:
       hibernate:
         default_schema: public
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update  
