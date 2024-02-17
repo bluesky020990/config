@@ -2,15 +2,15 @@
 management:
   health:
     diskspace:
-      enabled: 'true'
+      enabled: true
     db:
-      enabled: 'false'
+      enabled: false
   endpoint:
     health:
-      enabled: 'true'
+      enabled: true
       show-details: always
   endpoints:
-    enabled-by-default: 'false'
+    enabled-by-default: false
     web:
       base-path: /
 
@@ -18,17 +18,17 @@ management:
 #EUREKA CONFIG
 eureka:
   instance:
-    preferIpAddress: 'true'
+    preferIpAddress: true
   client:
-    fetchRegistry: 'true'
-    registerWithEureka: 'true'
+    fetchRegistry: true
+    registerWithEureka: true
     serviceUrl:
       defaultZone: http://localhost:8070/eureka/
 spring:
   cloud:
     loadbalancer:
       ribbon:
-        enabled: 'false'
+        enabled: false
 
 #
 #APP CONFIG
