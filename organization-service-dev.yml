@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/GstudyOrganization"
+    username: "{cipher}09021fe4e856cc341238832dbd1da4cd1924ca20e1a272d79be038b4ca2540ba"
+    password: "{cipher}b720dbd7e90005b882eeac60272b34a9a6cb6adca6e20a9ad6bae7609af0dbf7"
+  jpa:
+    properties:
+      hibernate:
+        default_schema: public
+    hibernate:
+      ddl-auto: update
