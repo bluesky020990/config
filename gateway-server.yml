@@ -35,17 +35,17 @@ spring:
         - id: organization-service
           uri: lb://organization-service
           predicates:
-            - Path=/organizations/**
+            - Path=/organization/**
           filters:
-            - RewritePath=/organizations/(?<path>.*), /$\{path}
+            - RewritePath=/organization/(?<path>.*), /$\{path}
             - RemoveRequestHeader= Cookie,Set-Cookie
 
         - id: product-service
           uri: lb://product-service
           predicates:
-            - Path=/products/**
+            - Path=/product/**
           filters:
-            - RewritePath=/products/(?<path>.*), /$\{path}
+            - RewritePath=/product/(?<path>.*), /$\{path}
             - RemoveRequestHeader= Cookie,Set-Cookie
 #
 #APP CONFIG
