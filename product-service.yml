@@ -1,3 +1,4 @@
+#HEATH CHECK CONFIG
 management:
   health:
     diskspace:
@@ -12,6 +13,9 @@ management:
     enabled-by-default: 'false'
     web:
       base-path: /
+
+#
+#EUREKA CONFIG
 eureka:
   instance:
     preferIpAddress: 'true'
@@ -25,6 +29,9 @@ spring:
     loadbalancer:
       ribbon:
         enabled: 'false'
+
+#
+#APP CONFIG
 app:
   version: 1.0.0
 
