@@ -58,9 +58,10 @@ server:
 #logging:
 #  config: classpath:logback-delayed.xml
 springdoc:
-  enable-native-support: true
+#  enable-native-support: true
   api-docs:
     enabled: true
+    path: /v3/api-docs
   swagger-ui:
     enabled: true
     path: /swagger-ui.html
