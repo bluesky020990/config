@@ -32,6 +32,14 @@ spring:
           filters:
             - RewritePath=/v3/api-docs/(?<path>.*), /$\{path}/v3/api-docs
 
+        - id: authorization-service
+          uri: lb://authorization-service
+          predicates:
+            - Path=/authorization/**
+          filters:
+            - RewritePath=/authorization/(?<path>.*), /$\{path}
+            - RemoveRequestHeader= Cookie,Set-Cookie
+
         - id: organization-service
           uri: lb://organization-service
           predicates:

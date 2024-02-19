@@ -35,7 +35,7 @@ spring:
 #
 #APP CONFIG
 app:
-  version: 1.0.0
+  version: auth_v1.0.0
 
 server:
   port: 8080
