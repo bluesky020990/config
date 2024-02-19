@@ -38,4 +38,4 @@ app:
   version: auth_v1.0.0
 
 server:
-  port: 8080
+  port: 9908
