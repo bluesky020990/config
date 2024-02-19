@@ -1,8 +1,8 @@
 spring:
   datasource:
     url: "jdbc:postgresql://localhost:5432/GstudyOrganization"
-    username: "{cipher}f84e9d0d45b868a41d1723c3228dd21540958aff43f980f19b824572bf6b5946"
-    password: "{cipher}6c58cffa32a4aff62c0bcacb2b1d62bce565671f58ffa65e0ad4fb7c6200df2c"
+    username: "{cipher}4d4e81c8fb52ff2733d6f30ab8bf498addfdd7c849ac898ff4ff9f9f1e38fe86"
+    password: "{cipher}f6b4199f134b21c3728badc009ab9f7ac1073c06496099ba4709f43f4d27fd6b"
   jpa:
     properties:
       hibernate:
