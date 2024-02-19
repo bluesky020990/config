@@ -75,7 +75,11 @@ springdoc:
     path: /swagger-ui.html
     config-url: /v3/api-docs/swagger-config
     urls:
+      - name: authorization
+        url: /v3/api-docs/authorization
+
       - name: organization
         url: /v3/api-docs/organization
+
       - name: product
         url: /v3/api-docs/product
