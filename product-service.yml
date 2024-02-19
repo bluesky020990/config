@@ -17,11 +17,12 @@ management:
 #
 #EUREKA CONFIG
 eureka:
-#  instance:
-#    preferIpAddress: true
+  instance:
+    preferIpAddress: true
+    hostname: localhost
   client:
-#    fetchRegistry: true
-#    registerWithEureka: true
+    fetchRegistry: true
+    registerWithEureka: true
     serviceUrl:
       defaultZone: http://localhost:8070/eureka/
 
