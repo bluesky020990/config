@@ -36,7 +36,7 @@ spring:
 #APP CONFIG
 app:
   version: auth_v1.0.0
-  jwt_secret: "{cipher}6e95706b0b42e45dbd5945a3705ac09b7f34210bc971dae9fbeefc0c406240b6b117139e544a140cec3c714b92cfe3dd0bffd7b8351fa8b9a5f717b5ce8520e0"
+  jwt_secret: "{cipher}213e68f3e824a5bb0d26e2b21fea6d8747c9ad229c6452665dee3d76dcf6e79dcba430df3fb1cbe85dab485cd32854d33490aae3aa2622d0d3dfbbef98f6873399c5a7247599a29e0352af65b28e0d70b93aba82a4174a35ff75868b3fca6e468898c350e1535299d19d31c647ac48e3"
   jwt_expiration_ms: 360000
 
 server:
