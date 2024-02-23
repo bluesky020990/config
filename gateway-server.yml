@@ -39,6 +39,7 @@ spring:
           filters:
             - RewritePath=/authorization/(?<path>.*), /$\{path}
             - RemoveRequestHeader= Cookie,Set-Cookie
+            - AuthenticationFilter
 
         - id: organization-service
           uri: lb://organization-service
@@ -47,6 +48,7 @@ spring:
           filters:
             - RewritePath=/organization/(?<path>.*), /$\{path}
             - RemoveRequestHeader= Cookie,Set-Cookie
+            - AuthenticationFilter
 
         - id: product-service
           uri: lb://product-service
@@ -55,6 +57,7 @@ spring:
           filters:
             - RewritePath=/product/(?<path>.*), /$\{path}
             - RemoveRequestHeader= Cookie,Set-Cookie
+            - AuthenticationFilter
 #
 #APP CONFIG
 app:
@@ -78,15 +81,9 @@ springdoc:
     urls:
       - name: authorization
         url: /v3/api-docs/authorization
-        filters:
-          - AuthenticationFilter
-          -
+
       - name: organization
         url: /v3/api-docs/organization
-        filters:
-          - AuthenticationFilter
 
       - name: product
         url: /v3/api-docs/product
-        filters:
-          - AuthenticationFilter
