@@ -36,6 +36,8 @@ spring:
 #APP CONFIG
 app:
   version: auth_v1.0.0
+  jwt_secret: "{cipher}6e95706b0b42e45dbd5945a3705ac09b7f34210bc971dae9fbeefc0c406240b6b117139e544a140cec3c714b92cfe3dd0bffd7b8351fa8b9a5f717b5ce8520e0"
+  jwt_expiration_ms: 360000
 
 server:
   port: 9908
