@@ -1,7 +1,7 @@
 spring:
   r2dbc:
-    username: "{cipher}4d4e81c8fb52ff2733d6f30ab8bf498addfdd7c849ac898ff4ff9f9f1e38fe86"
-    password: "{cipher}f6b4199f134b21c3728badc009ab9f7ac1073c06496099ba4709f43f4d27fd6b"
+    username: "{cipher}d4016c3ec154d71035327ffabb6e6c61b1e0a65925d9bfdd29371e1794ea39f0"
+    password: "{cipher}71bfa91199fb00fb96f551fd768f1a4124f276e1a6a5ffd1fa2bd46ce82e0930"
     url: "r2dbc:postgresql://localhost:5020/GstudyProduct"
     pool:
       max-create-connection-time: 2s # maximum time to wait to get a connection from the pool
