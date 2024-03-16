@@ -9,7 +9,7 @@ spring:
       max-size: 10 # the maximum number of connections kept in the pool
 
   datasource:
-    url: "jdbc:postgresql://localhost:5010/GstudyProduct"
+    url: "jdbc:postgresql://localhost:5020/GstudyProduct"
     username: "{cipher}d4016c3ec154d71035327ffabb6e6c61b1e0a65925d9bfdd29371e1794ea39f0"
     password: "{cipher}71bfa91199fb00fb96f551fd768f1a4124f276e1a6a5ffd1fa2bd46ce82e0930"
   jpa:
