@@ -13,4 +13,4 @@ spring:
       hibernate:
         default_schema: public
     hibernate:
-      ddl-auto: update
+      ddl-auto: create-drop
