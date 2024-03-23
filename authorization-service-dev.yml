@@ -1,8 +1,8 @@
 spring:
   datasource:
     url: "jdbc:postgresql://authorization_db:5010/GstudyAuthorization"
-    username: "{cipher}eeae8cb32f2385fd39d687057afb525557d42669a0cd0ac822189a3f74c46fe5"
-    password: "{cipher}f6b4199f134b21c3728badc009ab9f7ac1073c06496099ba4709f43f4d27fd6b"
+    username: "{cipher}2574c048d6b81ba056e7b418f857e8ca6701c4db31993e668a53d5a54d5eda4d"
+    password: "{cipher}951e9714507210126322701e759f513d277487df752910b3bedc62945c7680ff"
     hikari:
       connection-timeout: 2000
   jpa:
