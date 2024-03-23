@@ -6,6 +6,7 @@ spring:
     hikari:
       connection-timeout: 2000
   jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
     properties:
       hibernate:
         default_schema: public
