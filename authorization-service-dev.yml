@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: "jdbc:postgresql://authorization_db:5010/GstudyAuthorization"
+    url: "jdbc:postgresql://auth-db:5010/GstudyAuthorization"
     username: "{cipher}2574c048d6b81ba056e7b418f857e8ca6701c4db31993e668a53d5a54d5eda4d"
     password: "{cipher}951e9714507210126322701e759f513d277487df752910b3bedc62945c7680ff"
     hikari:
