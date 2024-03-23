@@ -11,3 +11,8 @@ spring:
         default_schema: public
     hibernate:
       ddl-auto: create-drop
+
+app:
+  version: auth_v1.0.0
+  jwt_secret: "{cipher}3a22510dad746bd41db4d903f38641bc52d29609df2a7757799801df5bcc04a7a062cc88bcaf8009fb8e1c8cc238b8e7a6cd1555ffdef3c00ebee884ab6518f219bb552b7bf46344c85a02307459117414a9ad4d591eaf0f54eb5537e8fa771b"
+  jwt_expiration_ms: 3600000
