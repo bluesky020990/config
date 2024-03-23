@@ -1,0 +1,20 @@
+spring:
+  r2dbc:
+    username: "{cipher}4d4e81c8fb52ff2733d6f30ab8bf498addfdd7c849ac898ff4ff9f9f1e38fe86"
+    password: "{cipher}f6b4199f134b21c3728badc009ab9f7ac1073c06496099ba4709f43f4d27fd6b"
+    url: "r2dbc:postgresql://localhost:5001/GstudyOrganization"
+    pool:
+      max-create-connection-time: 2s # maximum time to wait to get a connection from the pool
+      initial-size: 5 # the initial size of the connection pool
+      max-size: 10 # the maximum number of connections kept in the pool
+
+  jpa:
+    properties:
+      hibernate:
+        default_schema: public
+    hibernate:
+      ddl-auto: create-drop
+
+app:
+  version: 1.0.0
+  jwt_secret: "{cipher}3a22510dad746bd41db4d903f38641bc52d29609df2a7757799801df5bcc04a7a062cc88bcaf8009fb8e1c8cc238b8e7a6cd1555ffdef3c00ebee884ab6518f219bb552b7bf46344c85a02307459117414a9ad4d591eaf0f54eb5537e8fa771b"
