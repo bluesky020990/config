@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/GstudyAuthorization"
+    username: auth
+    password: 123456
+    hikari:
+      connection-timeout: 2000
+  jpa:
+    properties:
+      hibernate:
+        default_schema: public
+    hibernate:
+      ddl-auto: create-drop
+
+app:
+  version: auth_v1.0.0
+  jwt_secret: 951e9714507210126322701e759f513d277487df752910b3bedc62945c7680ff
+  jwt_expiration_ms: 3600000
