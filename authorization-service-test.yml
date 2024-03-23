@@ -1,11 +1,12 @@
 spring:
   datasource:
-    url: "jdbc:postgresql://localhost:5432/GstudyAuthorization"
+    url: "jdbc:postgresql://localhost:5010/GstudyAuthorization"
     username: auth
     password: 123456
     hikari:
       connection-timeout: 2000
   jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
     properties:
       hibernate:
         default_schema: public
