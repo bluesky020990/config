@@ -37,7 +37,7 @@ spring:
           predicates:
             - Path=/authorization/**
           filters:
-            - RewritePath=/authorization/(?<path>.*), /$\{path}
+#            - RewritePath=/authorization/(?<path>.*), /$\{path}
             - RemoveRequestHeader= Cookie,Set-Cookie
             - AuthenticationFilter
 
@@ -46,7 +46,7 @@ spring:
           predicates:
             - Path=/organization/**
           filters:
-            - RewritePath=/organization/(?<path>.*), /$\{path}
+#            - RewritePath=/organization/(?<path>.*), /$\{path}
             - RemoveRequestHeader= Cookie,Set-Cookie
             - AuthenticationFilter
 
@@ -55,7 +55,7 @@ spring:
           predicates:
             - Path=/product/**
           filters:
-            - RewritePath=/product/(?<path>.*), /$\{path}
+#            - RewritePath=/product/(?<path>.*), /$\{path}
             - RemoveRequestHeader= Cookie,Set-Cookie
             - AuthenticationFilter
 #
